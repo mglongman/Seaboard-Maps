@@ -10,24 +10,35 @@
 			}
 			.Map-Block {
 				width: 100%;
+				float: left;	
+			}
+			.Map-Block p {
+				display: inline;
+			}
+			.Map-Copy {
+				border: 2px solid #f00;
 			}
 		</style>
 	</head>
 	<body>
+		<div style="border: 1px solid black;">
+			<p>Some Text</p>
+		</div>
 		<div class="Map-Block>
 			<script 
 			src="https://embed.github.com/view/geojson/mglongman/Seaboard-Maps/master/Geodata/0_Colony.GIS.geojson" class="Map">
 			</script> 
-			<div>
-				<p>This site is at "0 Colony Dr., Plymouth MA"<p></br>
-				<p>It is a roughly cleared space, with some shading, and sited for retail development<p>
+			<div class="Map-Copy">
+				<p>This site is at "0 Colony Dr., Plymouth MA"</p>
+				<p>It is a roughly cleared space, with some shading, and sited for retail development</p>
 			</div>
 		</div>
 		<div class="Map-Block">
 			<script 
-			src="https://embed.github.com/view/geojson/mglongman/Seaboard-Maps/master/Geodata/0_Armstrong_Rd.GIS.geojson"
-			class="Map">
+			src="https://embed.github.com/view/geojson/mglongman/Seaboard-Maps/master/Geodata/0_Armstrong_Rd.GIS.geojson" class="Map">
 			</script>
+			<div class="Map-Copy">
+				<p>This is some copy associated with the second map (which, for some reason, is not displaying.</p>
 		</div>
 	</body>
 </html>
